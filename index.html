@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid nav">
+              <a class="navbar-brand navhead" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="uil uil-bars color"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <!-- home section -->
+    <section class="home">
+        <!-- background -->
+        <video autoplay loop muted plays-inline class="background">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <!-- home-content -->
+        <div class="content">
+            <h1>Hello there</h1>
+            <p>Kindly visit our website</p>
+        </div>
+        <button class="videobtn" onclick="playvideo()">
+          Pause
+        </button>
+    </section>
+         <!-- stories-section -->
+         
+      <section class="storiesgrp">
+      <!--heading  -->
+      <h3>Our Updates</h3>
+      <!-- stories -->
+      <div class="stories">
+        <div class="stories1">
+          <img src="Imgaes/img1.jpg" class="btn1" alt="" height="200px" width="200px">
+      </div>
+       <div class="stories2">
+       <img src="Imgaes/img2.jpg" class="btn2" alt="" height="200px" width="200px"> 
+       </div>
+        <div class="stories3">
+          <img src="Imgaes/img3.jpg" class="btn3" alt="" height="200px" width="200px">
+      </div>
+       
+       <div class="stories4">
+        <img src="Imgaes/img4.jpg" class="btn4" alt="" height="200px" width="200px">
+       </div>
+       <div class="stories5">
+        <img src="Imgaes/img5.jpg" class="btn5" alt="" height="200px" width="200px">
+       </div>
+      </div>
+    </section>
+        <!-- swiper -->
+        <section class="swiper-section">
+        <div class="swiper mySwiper">
+          <h3>Our Beliefs</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img height="200" width="200" src="Imgaes/img1.jpg" alt="">
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia at accusamus.</div>
+           </div>
+            <div class="swiper-slide">
+              <img height="200" width="200" src="Imgaes/img2.jpg" alt="">
+              <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia at accusamus.</div>
+            </div>
+            <div class="swiper-slide">
+              <img height="200" width="200" src="Imgaes/img3.jpg" alt="">
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia at accusamus.</div></div>
+            <div class="swiper-slide" >
+              <img height="200" width="200" src="Imgaes/img4.jpg" alt="">
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia at accusamus.</div></div>
+            <div class="swiper-slide">
+              <img height="200" width="200" src="Imgaes/img5.jpg" alt="">
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia at accusamus.</div></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>        
+        </section>
+
+          <!-- modals -->
+          <section class="modalsec " id="modalsec" >
+            <button class="cbtn "><i class="uil uil-times color"></i></button>
+            <div class="modal-container">
+              <div class="modalgrp ">
+                <div class="image">
+                 <img src="" height="200px" width="200px" alt="" class="modalimg"></div>
+                 <div class="text">Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit. <br> Quaerat ut voluptates, harum <br> quos provident odio cupiditate q</div>
+              </div>
+              
+            </div>
+          </section>
+          <!-- footer -->
+          <section class="footer">
+            <div class="text">created by <span>Deep Chaudhary</span></div>
+          </section>
+           <!-- JQuery -->
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+            <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <!-- local js -->
+      <script src="script.js"></script>
+</body>
+</html>
